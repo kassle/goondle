@@ -1,0 +1,8 @@
+/**/.project
+/**/.classpath
+/**/.settings/
+/**/nbactions.xml
+/**/target/
+/.vscode/
+*.log
+release.properties
