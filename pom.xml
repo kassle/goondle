@@ -59,12 +59,13 @@
             <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
-                <version>2.3.7</version>
+                <version>5.1.1</version>
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Bundle-Activator>org.krybrig.goondle.Activator</Bundle-Activator>
-                        <Private-Package>org.krybrig.goondle.*</Private-Package>
+                        <Export-Package>com.google.api.client.*</Export-Package>
+                        <Embed-Transitive>true</Embed-Transitive>
+                        <Embed-Dependency>*;scope=runtime;inline=true</Embed-Dependency>
                     </instructions>
                 </configuration>
             </plugin>
@@ -86,6 +87,12 @@
             <artifactId>org.osgi.core</artifactId>
             <version>4.3.0</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.api-client</groupId>
+            <artifactId>google-api-client</artifactId>
+            <version>1.30.10</version>
+            <scope>runtime</scope>
         </dependency>
     </dependencies>
 </project>
