@@ -5,4 +5,5 @@
 /**/target/
 /.vscode/
 *.log
+.factorypath
 release.properties

@@ -64,8 +64,9 @@
                 <configuration>
                     <instructions>
                         <Export-Package>com.google.api.client.*</Export-Package>
+                        <Import-Package>!com.google.appengine.*</Import-Package>
                         <Embed-Transitive>true</Embed-Transitive>
-                        <Embed-Dependency>*;scope=runtime;inline=true</Embed-Dependency>
+                        <Embed-Dependency>*;scope=!test;inline=true</Embed-Dependency>
                     </instructions>
                 </configuration>
             </plugin>
@@ -83,16 +84,9 @@
     
     <dependencies>
         <dependency>
-            <groupId>org.osgi</groupId>
-            <artifactId>org.osgi.core</artifactId>
-            <version>4.3.0</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
             <groupId>com.google.api-client</groupId>
             <artifactId>google-api-client</artifactId>
             <version>1.30.10</version>
-            <scope>runtime</scope>
         </dependency>
     </dependencies>
 </project>
