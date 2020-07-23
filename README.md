@@ -7,4 +7,8 @@ google-api-client version: 1.30.10
 
 # build
 
-mvn package
+mvn package install
+
+# release
+mvn release:prepare
+mvn release:perform
