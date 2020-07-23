@@ -64,9 +64,9 @@
                 <configuration>
                     <instructions>
                         <Export-Package>com.google.api.client.*</Export-Package>
-                        <Import-Package>!com.google.appengine.*</Import-Package>
+                        <Import-Package>!com.google.appengine.*,com.fasterxml.jackson.core;version="[2.11,3)",org.apache.commons.codec.binary;version="[1.11,2)"</Import-Package>
                         <Embed-Transitive>true</Embed-Transitive>
-                        <Embed-Dependency>*;scope=!test;inline=true</Embed-Dependency>
+                        <Embed-Dependency>!jackson-core,!commons-codec;scope=!test;inline=true</Embed-Dependency>
                     </instructions>
                 </configuration>
             </plugin>
