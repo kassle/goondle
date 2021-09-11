@@ -17,41 +17,17 @@
     
     <scm>
         <connection>scm:git:https://github.com/kassle/goondle.git</connection>
-        <developerConnection>scm:git:https://github.com/kassle/goondle.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:kassle/goondle.git</developerConnection>
+        <url>https://github.com/kassle/goondle</url>
         <tag>HEAD</tag>
     </scm>
 
-    <repositories>
-        <repository>
-            <id>central</id>
-            <url>https://repo.maven.apache.org/maven2</url>
-        </repository>
-        <repository>
-            <id>bintray-kassle-oss</id>
-            <name>bintray-kassle-oss</name>
-            <url>https://dl.bintray.com/kassle/oss</url>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>central</id>
-            <url>https://repo.maven.apache.org/maven2</url>
-            <layout>default</layout>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <releases>
-                <updatePolicy>never</updatePolicy>
-            </releases>
-        </pluginRepository>
-    </pluginRepositories>
-
     <distributionManagement>
         <repository>
-		<id>bintray-kassle-oss</id>
-		<name>kassle-oss</name>
-		<url>https://api.bintray.com/maven/kassle/oss/goondle/;publish=1</url>
-	</repository>
+            <id>krybrig-public</id>
+            <name>Krybrig Public Repository</name>
+            <url>https://app.krybrig.org/maven/repository/public/</url>
+        </repository>
     </distributionManagement>
 
     <build>
@@ -64,9 +40,9 @@
                 <configuration>
                     <instructions>
                         <Export-Package>com.google.api.client.*</Export-Package>
-                        <Import-Package>!com.google.appengine.*,com.fasterxml.jackson.core;version="[2.11,3)",org.apache.commons.codec.binary;version="[1.11,2)"</Import-Package>
+                        <Import-Package>!com.google.appengine.*,org.apache.commons.codec.binary;version="[1.11,2)"</Import-Package>
                         <Embed-Transitive>true</Embed-Transitive>
-                        <Embed-Dependency>!jackson-core,!commons-codec;scope=!test;inline=true</Embed-Dependency>
+                        <Embed-Dependency>!commons-codec;scope=!test;inline=true</Embed-Dependency>
                     </instructions>
                 </configuration>
             </plugin>
@@ -86,7 +62,7 @@
         <dependency>
             <groupId>com.google.api-client</groupId>
             <artifactId>google-api-client</artifactId>
-            <version>1.30.10</version>
+            <version>1.32.1</version>
         </dependency>
     </dependencies>
 </project>
