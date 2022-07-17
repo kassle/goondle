@@ -40,7 +40,8 @@
                 <configuration>
                     <instructions>
                         <Export-Package>com.google.api.client.*</Export-Package>
-                        <Import-Package>!com.google.appengine.*,org.apache.commons.codec.binary;version="[1.11,2)"</Import-Package>
+                        <_exportcontents>io.opencensus.*,javax.annotation.*,org.apache.http.*,org.apache.commons.logging.*,io.grpc.*</_exportcontents>
+                        <Import-Package>!com.google.appengine.*,org.apache.commons.codec.binary;version="[1.11,2)",javax.net.ssl.*</Import-Package>
                         <Embed-Transitive>true</Embed-Transitive>
                         <Embed-Dependency>!commons-codec;scope=!test;inline=true</Embed-Dependency>
                     </instructions>
