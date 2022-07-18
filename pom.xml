@@ -10,8 +10,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <project.scm.id>github</project.scm.id>
     </properties>
     
@@ -40,7 +40,8 @@
                 <configuration>
                     <instructions>
                         <Export-Package>com.google.api.client.*</Export-Package>
-                        <Import-Package>!com.google.appengine.*,org.apache.commons.codec.binary;version="[1.11,2)"</Import-Package>
+                        <_exportcontents>io.opencensus.*,javax.annotation.*,org.apache.http.*,org.apache.commons.logging.*,io.grpc.*</_exportcontents>
+                        <Import-Package>!com.google.appengine.*,org.apache.commons.codec.binary;version="[1.11,2)",javax.net.ssl.*</Import-Package>
                         <Embed-Transitive>true</Embed-Transitive>
                         <Embed-Dependency>!commons-codec;scope=!test;inline=true</Embed-Dependency>
                     </instructions>
@@ -62,7 +63,7 @@
         <dependency>
             <groupId>com.google.api-client</groupId>
             <artifactId>google-api-client</artifactId>
-            <version>1.32.1</version>
+            <version>1.35.2</version>
         </dependency>
     </dependencies>
 </project>
