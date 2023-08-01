@@ -23,7 +23,7 @@ google-api-client version: 2.2.0
     <dependency>
         <groupId>org.krybrig</groupId>
         <artifactId>goondle</artifactId>
-        <version>1.1.1</version>
+        <version>1.2.0</version>
     </dependency>
 ```
 
