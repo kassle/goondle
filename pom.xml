@@ -40,7 +40,7 @@
                 <configuration>
                     <instructions>
                         <Export-Package>com.google.api.client.*</Export-Package>
-                        <_exportcontents>io.opencensus.*,javax.annotation.*,org.apache.http.*,org.apache.commons.logging.*,io.grpc.*</_exportcontents>
+                        <_exportcontents>io.opencensus.*,javax.annotation.*,org.apache.http.*,org.apache.commons.logging.*,io.grpc.*,com.google.common.*,com.google.errorprone.annotations,org.checkerframework.checker.nullness.qual,org.checkerframework.framework.qual</_exportcontents>
                         <Import-Package>!com.google.appengine.*,org.apache.commons.codec.binary;version="[1.11,2)",javax.net.ssl.*</Import-Package>
                         <Embed-Transitive>true</Embed-Transitive>
                         <Embed-Dependency>!commons-codec;scope=!test;inline=true</Embed-Dependency>
@@ -63,7 +63,7 @@
         <dependency>
             <groupId>com.google.api-client</groupId>
             <artifactId>google-api-client</artifactId>
-            <version>2.2.0</version>
+            <version>2.4.0</version>
         </dependency>
     </dependencies>
 </project>
