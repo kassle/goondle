@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.krybrig</groupId>
     <artifactId>goondle</artifactId>
-    <version>1.2.2-SNAPSHOT</version>
+    <version>1.2.2</version>
     <packaging>bundle</packaging>
 
     <name>goondle</name>
@@ -19,7 +19,7 @@
         <connection>scm:git:https://github.com/kassle/goondle.git</connection>
         <developerConnection>scm:git:git@github.com:kassle/goondle.git</developerConnection>
         <url>https://github.com/kassle/goondle</url>
-        <tag>HEAD</tag>
+        <tag>goondle-1.2.2</tag>
     </scm>
 
     <distributionManagement>
