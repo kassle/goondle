@@ -24,9 +24,9 @@
 
     <distributionManagement>
         <repository>
-            <id>krybrig-public</id>
-            <name>Krybrig Public Repository</name>
-            <url>https://app.krybrig.org/maven/repository/public/</url>
+            <id>krybrig-repository-public</id>
+            <name>mvn.kry.ovh</name>
+            <url>https://mvn.kry.ovh/public</url>
         </repository>
     </distributionManagement>
 
@@ -63,7 +63,7 @@
         <dependency>
             <groupId>com.google.api-client</groupId>
             <artifactId>google-api-client</artifactId>
-            <version>2.4.0</version>
+            <version>2.6.0</version>
         </dependency>
     </dependencies>
 </project>
