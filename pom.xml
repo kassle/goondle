@@ -16,7 +16,7 @@
     </properties>
     
     <scm>
-        <connection>scm:git:https://github.com/kassle/goondle.git</connection>
+        <connection>scm:git:git@github.com:kassle/goondle.git</connection>
         <developerConnection>scm:git:git@github.com:kassle/goondle.git</developerConnection>
         <url>https://github.com/kassle/goondle</url>
         <tag>HEAD</tag>
