@@ -3,7 +3,7 @@ Google Java API Client Services as single osgi compatible bundle
 
 https://developers.google.com/api-client-library/java
 
-google-api-client version: 2.7.0
+google-api-client version: 2.9.0
 
 # maven
 
@@ -23,7 +23,7 @@ google-api-client version: 2.7.0
     <dependency>
         <groupId>org.krybrig</groupId>
         <artifactId>goondle</artifactId>
-        <version>1.2.3</version>
+        <version>1.2.4</version>
     </dependency>
 ```
 
