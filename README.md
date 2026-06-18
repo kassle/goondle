@@ -11,9 +11,9 @@ google-api-client version: 2.9.0
 
 ```
     <repository>
-        <id>krybrig-repository-public</id>
-        <name>mvn.kry.ovh</name>
-        <url>https://mvn.kry.ovh/public</url>
+        <id>rayslan-public</id>
+        <name>Rayslan Maven Repository</name>
+        <url>https://repo.rayslan.com/maven/public</url>
     </repository>
 ```
 
